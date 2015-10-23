@@ -1,0 +1,2 @@
+
+#include <QHibernate/SettingsFactory.h>

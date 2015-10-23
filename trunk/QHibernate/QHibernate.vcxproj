@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL Debug|Win32">
+      <Configuration>DLL Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL Release|Win32">
+      <Configuration>DLL Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0538558E-0E06-48C7-87A0-DFF86BC93DB9}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>QHibernate</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">$(SolutionDir)$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\$(ProjectName)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">$(SolutionDir)$(Configuration)\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_CORE_LIB;QT_XML_LIB;QT_SQL_LIB;QHIBERNATE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtSql;.;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Xmld.lib;Qt5Sqld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_CORE_LIB;QT_XML_LIB;QT_SQL_LIB;CSHIBERNATE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtSql;.;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Xmld.lib;Qt5Sqld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_XML_LIB;QT_SQL_LIB;CSHIBERNATE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtSql;.;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Xml.lib;Qt5Sql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_XML_LIB;QT_SQL_LIB;CSHIBERNATE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtSql;.;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Xml.lib;Qt5Sql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicSetter.cpp" />
+    <ClCompile Include="Class.cpp" />
+    <ClCompile Include="ConfigurationData.cpp" />
+    <ClCompile Include="CustomUserType.cpp" />
+    <ClCompile Include="CustomUserTypeRegistery.cpp" />
+    <ClCompile Include="Delete.cpp" />
+    <ClCompile Include="Dialect.cpp" />
+    <ClCompile Include="ForeignGenerator.cpp" />
+    <ClCompile Include="GeneratorMapping.cpp" />
+    <ClCompile Include="Getter.cpp" />
+    <ClCompile Include="IdentifierGeneratorFactory.cpp" />
+    <ClCompile Include="Insert.cpp" />
+    <ClCompile Include="KeyMapping.cpp" />
+    <ClCompile Include="ListMapping.cpp" />
+    <ClCompile Include="ManyToMany.cpp" />
+    <ClCompile Include="MappingParser.cpp" />
+    <ClCompile Include="ColumnMapping.cpp" />
+    <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="ConfigurationParser.cpp" />
+    <ClCompile Include="HibernateException.cpp" />
+    <ClCompile Include="IdentifierMapping.cpp" />
+    <ClCompile Include="ManyToOne.cpp" />
+    <ClCompile Include="MetaObjectRegistery.cpp" />
+    <ClCompile Include="NativeGenerator.cpp" />
+    <ClCompile Include="ObjectListProxy.cpp" />
+    <ClCompile Include="OneToMany.cpp" />
+    <ClCompile Include="OneToOne.cpp" />
+    <ClCompile Include="PropertyAccesor.cpp" />
+    <ClCompile Include="PropertyMapping.cpp" />
+    <ClCompile Include="QObjectPersister.cpp" />
+    <ClCompile Include="QtSqlHelper.cpp" />
+    <ClCompile Include="Query.cpp" />
+    <ClCompile Include="QueryData.cpp" />
+    <ClCompile Include="ReferenceCounter.cpp" />
+    <ClCompile Include="Relationship.cpp" />
+    <ClCompile Include="Restrictions.cpp" />
+    <ClCompile Include="Select.cpp" />
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionData.cpp" />
+    <ClCompile Include="SessionFactory.cpp" />
+    <ClCompile Include="SessionFactoryData.cpp" />
+    <ClCompile Include="SetMapping.cpp" />
+    <ClCompile Include="Setter.cpp" />
+    <ClCompile Include="SettingsFactory.cpp" />
+    <ClCompile Include="Transaction.cpp" />
+    <ClCompile Include="ObjectProxy.cpp" />
+    <ClCompile Include="TypeQPointF.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicSetter.h" />
+    <ClInclude Include="Cascade.h" />
+    <ClInclude Include="ClassList.h" />
+    <ClInclude Include="ClassMap.h" />
+    <ClInclude Include="ColumnList.h" />
+    <ClInclude Include="ConfigurationData.h" />
+    <ClInclude Include="Criteria.h" />
+    <ClInclude Include="Criterion.h" />
+    <ClInclude Include="CustomUserType.h" />
+    <ClInclude Include="CustomUserTypeRegistery.h" />
+    <ClInclude Include="Delete.h" />
+    <ClInclude Include="Dialect.h" />
+    <ClInclude Include="Fetch.h" />
+    <ClInclude Include="ForeignGenerator.h" />
+    <ClInclude Include="GeneratorMapping.h" />
+    <ClInclude Include="Getter.h" />
+    <ClInclude Include="IdentifierGenerator.h" />
+    <ClInclude Include="IdentifierGeneratorFactory.h" />
+    <ClInclude Include="Insert.h" />
+    <ClInclude Include="KeyMapping.h" />
+    <ClInclude Include="Lazy.h" />
+    <ClInclude Include="ListMapping.h" />
+    <ClInclude Include="ListMappingList.h" />
+    <ClInclude Include="ManyToMany.h" />
+    <ClInclude Include="ManyToOneList.h" />
+    <ClInclude Include="MappingParser.h" />
+    <ClInclude Include="ColumnMapping.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="QHibernate.h" />
+    <ClInclude Include="HibernateException.h" />
+    <ClInclude Include="QHibernate_global.h" />
+    <ClInclude Include="Class.h" />
+    <ClInclude Include="ManyToOne.h" />
+    <ClInclude Include="MetaObjectRegistery.h" />
+    <ClInclude Include="NativeGenerator.h" />
+    <ClInclude Include="NotFound.h" />
+    <ClInclude Include="ObjectListProxy.h" />
+    <ClInclude Include="ObjectProxy.h" />
+    <ClInclude Include="OneToMany.h" />
+    <ClInclude Include="OneToOne.h" />
+    <ClInclude Include="OneToOneList.h" />
+    <ClInclude Include="OuterJoin.h" />
+    <ClInclude Include="Pointer.h" />
+    <ClInclude Include="PropertyAccesor.h" />
+    <ClInclude Include="PropertyList.h" />
+    <ClInclude Include="QObjectPersister.h" />
+    <ClInclude Include="PropertyMapping.h" />
+    <ClInclude Include="IdentifierMapping.h" />
+    <ClInclude Include="QtSqlHelper.h" />
+    <ClInclude Include="Query.h" />
+    <ClInclude Include="QueryData.h" />
+    <ClInclude Include="ReferenceCounter.h" />
+    <ClInclude Include="Relationship.h" />
+    <ClInclude Include="Restrictions.h" />
+    <ClInclude Include="Select.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="SessionData.h" />
+    <ClInclude Include="SessionFactory.h" />
+    <ClInclude Include="ConfigurationParser.h" />
+    <ClInclude Include="SessionFactoryData.h" />
+    <ClInclude Include="SetMapping.h" />
+    <ClInclude Include="Setter.h" />
+    <ClInclude Include="SettingsFactory.h" />
+    <ClInclude Include="SqlTypes.h" />
+    <ClInclude Include="StrongPointer.h" />
+    <ClInclude Include="Transaction.h" />
+    <ClInclude Include="TypeQPointF.h" />
+    <ClInclude Include="WeakPointer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_Win32="5.4.1" Qt5Version_x0020_Win32="$(DefaultQtVersion)" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

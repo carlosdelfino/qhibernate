@@ -1,0 +1,3 @@
+
+#include <QHibernate\ReferenceCounter.h>
+

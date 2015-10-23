@@ -1,0 +1,2 @@
+
+#include <QHibernate/Restrictions.h>
