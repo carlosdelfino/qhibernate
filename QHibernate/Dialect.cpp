@@ -1,0 +1,2 @@
+
+#include <QHibernate/Dialect.h>

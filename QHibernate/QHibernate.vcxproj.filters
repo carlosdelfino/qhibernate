@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Mapping Classes">
+      <UniqueIdentifier>{8eb6e44d-cf5c-468a-aa91-974679028999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Dialect">
+      <UniqueIdentifier>{1ac2eeba-0a7f-4b70-bcb7-fabb132711c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sql">
+      <UniqueIdentifier>{1a2568de-e879-4d1c-9202-8dc4ca875dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="id">
+      <UniqueIdentifier>{5a25919a-6dbf-4efc-8783-ef732eca6c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Composite Types">
+      <UniqueIdentifier>{e116c6d5-b94d-4116-b2da-0eb1686f9691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{f1cfbf22-872a-4dec-87df-3048ca5af84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="property">
+      <UniqueIdentifier>{28882d98-20ab-4181-9587-a1b3c12d08f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tuple">
+      <UniqueIdentifier>{463855c1-c412-433e-af38-99935379d4dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationData.cpp">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationParser.cpp">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsFactory.cpp">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomUserType.cpp">
+      <Filter>Composite Types</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomUserTypeRegistery.cpp">
+      <Filter>Composite Types</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeQPointF.cpp">
+      <Filter>Composite Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialect.cpp">
+      <Filter>Dialect</Filter>
+    </ClCompile>
+    <ClCompile Include="ForeignGenerator.cpp">
+      <Filter>id</Filter>
+    </ClCompile>
+    <ClCompile Include="IdentifierGeneratorFactory.cpp">
+      <Filter>id</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeGenerator.cpp">
+      <Filter>id</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMapping.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ListMapping.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ManyToMany.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ManyToOne.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="MappingParser.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="OneToOne.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyMapping.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Relationship.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMapping.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Class.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ColumnMapping.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratorMapping.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="IdentifierMapping.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicSetter.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="Getter.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyAccesor.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="Setter.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="QObjectPersister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Restrictions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionFactoryData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HibernateException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaObjectRegistery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectListProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtSqlHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Query.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferenceCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Delete.cpp">
+      <Filter>Sql</Filter>
+    </ClCompile>
+    <ClCompile Include="Insert.cpp">
+      <Filter>Sql</Filter>
+    </ClCompile>
+    <ClCompile Include="Select.cpp">
+      <Filter>Sql</Filter>
+    </ClCompile>
+    <ClCompile Include="OneToMany.cpp">
+      <Filter>Mapping Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Configuration.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationData.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationParser.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsFactory.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomUserType.h">
+      <Filter>Composite Types</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomUserTypeRegistery.h">
+      <Filter>Composite Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeQPointF.h">
+      <Filter>Composite Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialect.h">
+      <Filter>Dialect</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectListProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QObjectPersister.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QtSqlHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Criteria.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Criterion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HibernateException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaObjectRegistery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Query.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferenceCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Restrictions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionFactoryData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrongPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WeakPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ForeignGenerator.h">
+      <Filter>id</Filter>
+    </ClInclude>
+    <ClInclude Include="IdentifierGenerator.h">
+      <Filter>id</Filter>
+    </ClInclude>
+    <ClInclude Include="IdentifierGeneratorFactory.h">
+      <Filter>id</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeGenerator.h">
+      <Filter>id</Filter>
+    </ClInclude>
+    <ClInclude Include="IdentifierMapping.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMapping.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Lazy.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="OneToOneList.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="OneToOne.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ListMapping.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ListMappingList.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ManyToMany.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ManyToOne.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ManyToOneList.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="MappingParser.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="NotFound.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="OuterJoin.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyList.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyMapping.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Relationship.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMapping.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Cascade.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Class.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassMap.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ColumnList.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ColumnMapping.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Fetch.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratorMapping.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicSetter.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="Getter.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyAccesor.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="Setter.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="Delete.h">
+      <Filter>Sql</Filter>
+    </ClInclude>
+    <ClInclude Include="Insert.h">
+      <Filter>Sql</Filter>
+    </ClInclude>
+    <ClInclude Include="Select.h">
+      <Filter>Sql</Filter>
+    </ClInclude>
+    <ClInclude Include="SqlTypes.h">
+      <Filter>Sql</Filter>
+    </ClInclude>
+    <ClInclude Include="QHibernate_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QHibernate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OneToMany.h">
+      <Filter>Mapping Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
