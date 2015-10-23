@@ -20,16 +20,28 @@
 	static const int metaId##moduleName##className##2 = \
 		qRegisterMetaType<WeakPointer<##moduleName##::##className##>>("WeakPointer<"#moduleName"::"#className">");
 
-#define QHIBERNATE_CUSTOM_USER_TYPE(componentType, customUserType)
 
-// #define QHIBERNATE_CUSTOM_USER_TYPE(componentType, customUserType) \
-// 	const CustomUserType* get##customUserType##() \
-// 	{ \
-// 		static customUserType instance; \
-// 		return (CustomUserType*)&instance; \
-// 	} \
-// 	static const bool registered##customUserType## = \
-// 	CustomUserTypeRegistery::registerCustomUserType(#componentType, get##customUserType##);
-// 	
+template <typename T>
+struct CustomUserTypeId
+{
+};
+
+#define QHIBERNATE_CUSTOM_USER_TYPE(componentType, customUserType)	\
+template<>															\
+struct CustomUserTypeId<##customUserType##>							\
+{																	\
+	static const QHibernate::CustomUserType* getCustomUserType()	\
+	{																\
+		static customUserType instance;								\
+		return (QHibernate::CustomUserType*)&instance;				\
+	}																\
+																	\
+	static const bool registered;									\
+};																	\
+																	\
+const bool CustomUserTypeId < customUserType >::registered =		\
+	QHibernate::CustomUserTypeRegistery::registerCustomUserType(	\
+	#componentType,													\
+	CustomUserTypeId< customUserType >::getCustomUserType);
 
 #endif // QHibernate_H
