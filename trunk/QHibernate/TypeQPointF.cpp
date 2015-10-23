@@ -58,3 +58,4 @@ namespace QHibernate
 }
 
 QHIBERNATE_CUSTOM_USER_TYPE(QPointF, QHibernate::TypeQPointF);
+
